@@ -19,7 +19,7 @@ pipeline {
        stage('package'){
            steps{
             def mvnHome= tool name: 'MAVEN_3.5', type: 'maven'
-              sh"{$mvnHome}/opt/apache-maven-3.6.1/bin/mvn package'
+              sh"{$mvnHome}/opt/apache-maven-3.6.1/bin/mvn package"
            }   
        }
        
